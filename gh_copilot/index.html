@@ -1,0 +1,2679 @@
+<html
+  dir="ltr"
+  lang="es-ES"
+  data-lt-installed="true"
+  style="
+    --impact-supportCenterButton-zIndex-base: 9990;
+    --impact-expertTools-zIndex-base: 9999;
+  "
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#D5FAFF" />
+
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="apple-itunes-app" content="app-id=480883488" />
+    <link rel="manifest" href="/web-app-manifest/manifest.json" />
+    <meta
+      name="sentry-trace"
+      content="ad8d505f61d8455baf92f8d28c6c5156-7499b652b8ae4993-0"
+    />
+    <title>
+      1 Los datos conceptos introductorios.pdf: SQL para Análisis de Datos -
+      Aula 1
+    </title>
+
+    <link
+      rel="preload"
+      href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/10e332c6d9e1978f949c94f99ee82b15/variables-7dd4b80918af0e0218ec0229e4bd5873.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-9a935dbdba.css"
+      media="all"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1641/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1640/favicon-32x32.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/4653828/uoc-niu.css"
+      media="all"
+    />
+
+    <script
+      src="//uoc.eesysoft.com/resources/js/canvas/launch.js"
+      async=""
+      type="text/javascript"
+    ></script>
+    <script>
+      if (navigator.userAgent.match(/(MSIE|Trident\/)/))
+        location.replace("/ie-is-not-supported.html");
+    </script>
+    <script>
+      INST = {
+        environment: "production",
+        allowMediaComments: true,
+        kalturaSettings: {
+          domain: "eu.nv.instructuremedia.com",
+          resource_domain: "eu.nv.instructuremedia.com",
+          rtmp_domain: "dub.rtmp.instructuremedia.com",
+          partner_id: "5",
+          subpartner_id: "0",
+          player_ui_conf: "0",
+          kcw_ui_conf: "0",
+          upload_ui_conf: "0",
+          max_file_size_bytes: 534773760,
+          do_analytics: false,
+          hide_rte_button: false,
+          js_uploader: true,
+        },
+        logPageViews: true,
+        editorButtons: [
+          {
+            name: "Google LTI",
+            id: 105,
+            favorite: true,
+            url: "https://google-drive-lti-dub-prod.instructure.com/lti/rce-content-selection",
+            icon_url:
+              "https://google-drive-lti-dub-prod.instructure.com/icon.png",
+            canvas_icon_class: {
+              icon_url:
+                "https://google-drive-lti-dub-prod.instructure.com/icon.png",
+              message_type: "ContentItemSelectionRequest",
+              selection_height: 600,
+              selection_width: 700,
+              url: "https://google-drive-lti-dub-prod.instructure.com/lti/rce-content-selection",
+            },
+            width: 700,
+            height: 600,
+            use_tray: false,
+            on_by_default: false,
+            description:
+              "\u003cp\u003eAllows you to pull in documents from Google Drive to Canvas\u003c/p\u003e\n",
+          },
+          {
+            name: "Office365 LTI",
+            id: 106,
+            favorite: false,
+            url: "https://office365-dub-prod.instructure.com/lti/rce-content-item",
+            icon_url:
+              "https://office365-dub-prod.instructure.com/images/office365_icon.png",
+            canvas_icon_class: {
+              icon_url:
+                "https://office365-dub-prod.instructure.com/images/office365_icon.png",
+              message_type: "ContentItemSelectionRequest",
+              selection_height: 600,
+              selection_width: 900,
+              url: "https://office365-dub-prod.instructure.com/lti/rce-content-item",
+            },
+            width: 900,
+            height: 600,
+            use_tray: false,
+            on_by_default: false,
+            description:
+              "\u003cp\u003eAllows you to pull in documents from Office 365 to Canvas\u003c/p\u003e\n",
+          },
+          {
+            name: "Contacto profesorado colaborador",
+            id: 126,
+            favorite: false,
+            url: "https://ltiproxy.uoc.edu/lti13to11/",
+            icon_url: "https://cdn-icons-png.flaticon.com/512/58/58648.png",
+            canvas_icon_class: null,
+            width: 800,
+            height: 800,
+            use_tray: false,
+            on_by_default: false,
+            description:
+              "\u003cp\u003eSelecciona l'eina de l'aula\u003c/p\u003e\n",
+          },
+          {
+            name: "Recursos de aprendizaje",
+            id: 144,
+            favorite: true,
+            url: "https://ralti.uoc.edu/",
+            icon_url: "https://ralti.uoc.edu/img/uoc.png",
+            canvas_icon_class: null,
+            width: 900,
+            height: 600,
+            use_tray: false,
+            on_by_default: false,
+            description:
+              "\u003cp\u003eRecursos de Aprendizaje de la Asignatura\u003c/p\u003e\n",
+          },
+          {
+            name: "Insert a math equation - MathType",
+            id: 8221,
+            favorite: false,
+            url: "https://www.wiris.net/instructure.com/canvas/editor/dialog",
+            icon_url:
+              "https://www.wiris.net/instructure.com/canvas/editor/icon.gif",
+            canvas_icon_class: null,
+            width: 570,
+            height: 450,
+            use_tray: false,
+            on_by_default: false,
+            description:
+              "\u003cp\u003eInsert and edit mathematical formulas with MathType\u003c/p\u003e\n",
+          },
+          {
+            name: "Traducir",
+            id: 9967,
+            favorite: false,
+            url: "https://multilingual-translation-prod.herokuapp.com/lti/v1p0/launch?launch_type=editor_button",
+            icon_url:
+              "https://multilingual-translation-prod.herokuapp.com/translate.svg",
+            canvas_icon_class: null,
+            width: 360,
+            height: 300,
+            use_tray: false,
+            on_by_default: false,
+            description: "",
+          },
+          {
+            name: "Vimeo",
+            id: 10023,
+            favorite: false,
+            url: "https://www.edu-apps.org/lti_public_resources/?tool_id=vimeo",
+            icon_url:
+              "https://www.edu-apps.org/assets/lti_public_resources/vimeo_icon.png",
+            canvas_icon_class: null,
+            width: 560,
+            height: 600,
+            use_tray: false,
+            on_by_default: false,
+            description:
+              "\u003cp\u003eVimeo is a video sharing website on which users can upload, share, and view videos. The community of Vimeo includes indie, professional, and novice filmmakers.\u003c/p\u003e\n",
+          },
+          {
+            name: "YouTube",
+            id: 10024,
+            favorite: false,
+            url: "https://www.edu-apps.org/lti_public_resources/?tool_id=youtube",
+            icon_url:
+              "https://www.edu-apps.org/assets/lti_public_resources/youtube_icon.png",
+            canvas_icon_class: null,
+            width: 560,
+            height: 600,
+            use_tray: false,
+            on_by_default: false,
+            description:
+              "\u003cp\u003eSearch publicly available YouTube videos. A new icon will show up in your course rich editor letting you search YouTube and click to embed videos in your course material.\u003c/p\u003e\n",
+          },
+        ],
+      };
+      ENV = {
+        ASSET_HOST: "https://du11hjcvx0uqb.cloudfront.net",
+        active_brand_config_json_url:
+          "https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/10e332c6d9e1978f949c94f99ee82b15/variables-7dd4b80918af0e0218ec0229e4bd5873.json",
+        active_brand_config: {
+          md5: "10e332c6d9e1978f949c94f99ee82b15",
+          variables: {
+            "ic-brand-primary": "#000078",
+            "ic-brand-font-color-dark": "#000078",
+            "ic-link-color": "#000078",
+            "ic-brand-button--secondary-bgd": "#73edff",
+            "ic-brand-button--secondary-text": "#000078",
+            "ic-brand-global-nav-bgd": "#D5FAFF",
+            "ic-brand-global-nav-ic-icon-svg-fill": "#000078",
+            "ic-brand-global-nav-menu-item__text-color": "#000078",
+            "ic-brand-global-nav-avatar-border": "#000078",
+            "ic-brand-global-nav-logo-bgd": "#73ecfe",
+            "ic-brand-header-image":
+              "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1606/logo-uoc-default.png",
+            "ic-brand-mobile-global-nav-logo":
+              "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1607/logo-uoc-default.png",
+            "ic-brand-favicon":
+              "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1640/favicon-32x32.png",
+            "ic-brand-apple-touch-icon":
+              "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1641/apple-icon-180x180.png",
+            "ic-brand-msapplication-tile-square":
+              "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1642/UOC-logo.png",
+            "ic-brand-msapplication-tile-wide":
+              "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1643/UOC-logo.png",
+            "ic-brand-Login-body-bgd-color": "#f2f2f2",
+            "ic-brand-Login-body-bgd-image":
+              "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1638/he-image-8%20%25281%2529.jpg",
+            "ic-brand-Login-body-bgd-shadow-color": "#D0D0D0",
+            "ic-brand-Login-logo":
+              "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/1639/uoc_masterbrand.png",
+            "ic-brand-Login-Content-bgd-color": "#f0f0f0",
+            "ic-brand-Login-Content-border-color": "#D0D0D0",
+            "ic-brand-Login-Content-label-text-color": "#444",
+            "ic-brand-Login-Content-password-text-color": "#444",
+            "ic-brand-Login-footer-link-color": "#2773e2",
+            "ic-brand-Login-instructure-logo": "#aaa",
+          },
+          share: false,
+          name: null,
+          created_at: "2024-10-28T17:45:35+01:00",
+          js_overrides:
+            "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/4865870/js-pro.js",
+          css_overrides:
+            "https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/4653828/uoc-niu.css",
+          mobile_js_overrides: "",
+          mobile_css_overrides: "",
+          parent_md5: null,
+        },
+        confetti_branding_enabled: false,
+        url_to_what_gets_loaded_inside_the_tinymce_editor_css: [
+          "https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/10e332c6d9e1978f949c94f99ee82b15/variables-7dd4b80918af0e0218ec0229e4bd5873.css",
+          "https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-90e5ad1077.css",
+          "https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css",
+        ],
+        url_for_high_contrast_tinymce_editor_css: [
+          "https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-7dd4b80918af0e0218ec0229e4bd5873.css",
+          "https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-795277483f.css",
+          "https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-6ee09b0b2f.css",
+        ],
+        current_user_id: "339810",
+        current_user_global_id: "186670000000339810",
+        current_user_heap_id:
+          "uu-2-c8793880d44e81c61caf15b278e8b7527971199c37720004034fe1e98e040a4e-4heGoBIE0uCgUOpxC4Aq2ZmCYPx3HfY2Bf0grpy1",
+        current_user_roles: ["user", "student"],
+        current_user_is_student: true,
+        current_user_types: [],
+        current_user_disabled_inbox: false,
+        current_user_visited_tabs: null,
+        discussions_reporting: true,
+        files_domain: "cluster219.canvas-user-content.com",
+        group_information: null,
+        DOMAIN_ROOT_ACCOUNT_ID: "186670000000000001",
+        DOMAIN_ROOT_ACCOUNT_UUID: "4heGoBIE0uCgUOpxC4Aq2ZmCYPx3HfY2Bf0grpy1",
+        k12: false,
+        help_link_name: "Ayuda",
+        help_link_icon: "help",
+        use_high_contrast: false,
+        auto_show_cc: false,
+        disable_celebrations: false,
+        disable_keyboard_shortcuts: false,
+        LTI_LAUNCH_FRAME_ALLOWANCES: [
+          "geolocation *",
+          "microphone *",
+          "camera *",
+          "midi *",
+          "encrypted-media *",
+          "autoplay *",
+          "clipboard-write *",
+          "display-capture *",
+        ],
+        DEEP_LINKING_POST_MESSAGE_ORIGIN: "https://aula.uoc.edu",
+        comment_library_suggestions_enabled: false,
+        SETTINGS: {
+          open_registration: false,
+          collapse_global_nav: false,
+          release_notes_badge_disabled: false,
+          can_add_pronouns: false,
+          show_sections_in_course_tray: true,
+        },
+        RAILS_ENVIRONMENT: "Production",
+        IN_PACED_COURSE: false,
+        SENTRY_FRONTEND: {
+          dsn: "https://355a1d96717e4038ac25aa852fa79a8f@relay-dub.sentry.insops.net/388",
+          org_slug: "instructure",
+          base_url: "https://sentry.insops.net",
+          normalized_route: "/courses/{course_id}/files/{id}",
+          errors_sample_rate: "0.005",
+          traces_sample_rate: "0.005",
+          url_deny_pattern: "instructure-uploads.*amazonaws.com",
+          revision: "canvas-lms@20241106.293",
+        },
+        DATA_COLLECTION_ENDPOINT:
+          "https://canvas-frontend-data-dub-prod.inscloudgate.net/submit",
+        DOMAIN_ROOT_ACCOUNT_SFID: "001A000001AHRsDIAX",
+        DIRECT_SHARE_ENABLED: false,
+        CAN_VIEW_CONTENT_SHARES: false,
+        FEATURES: {
+          featured_help_links: true,
+          account_level_blackout_dates: false,
+          render_both_to_do_lists: false,
+          commons_new_quizzes: false,
+          course_paces_redesign: true,
+          course_paces_for_students: true,
+          explicit_latex_typesetting: false,
+          media_links_use_attachment_id: true,
+          permanent_page_links: true,
+          selective_release_backend: true,
+          selective_release_ui_api: true,
+          selective_release_edit_page: true,
+          enhanced_course_creation_account_fetching: false,
+          instui_for_import_page: false,
+          multiselect_gradebook_filters: true,
+          assignment_edit_placement_not_on_announcements: false,
+          instui_header: false,
+          rce_find_replace: true,
+          courses_popout_sisid: true,
+          dashboard_graphql_integration: false,
+          discussion_checkpoints: false,
+          speedgrader_studio_media_capture: true,
+          disallow_threaded_replies_fix_alert: true,
+          product_tours: false,
+          usage_rights_discussion_topics: true,
+          granular_permissions_manage_users: true,
+          create_course_subaccount_picker: true,
+          file_verifiers_for_quiz_links: true,
+          lti_deep_linking_module_index_menu_modal: true,
+          lti_dynamic_registration: true,
+          lti_registrations_next: false,
+          lti_multiple_assignment_deep_linking: true,
+          lti_overwrite_user_url_input_select_content_dialog: true,
+          buttons_and_icons_root_account: false,
+          extended_submission_state: false,
+          scheduled_page_publication: true,
+          send_usage_metrics: false,
+          rce_transform_loaded_content: false,
+          mobile_offline_mode: false,
+          react_discussions_post: true,
+          instui_nav: false,
+          enhanced_developer_keys_tables: true,
+          lti_registrations_discover_page: false,
+          account_level_mastery_scales: false,
+          non_scoring_rubrics: true,
+          top_navigation_placement: false,
+          rubric_criterion_range: true,
+          lti_migration_info: true,
+          rce_lite_enabled_speedgrader_comments: true,
+          lti_toggle_placements: true,
+          login_registration_ui_identity: false,
+          lti_apps_page_instructors: false,
+          embedded_release_notes: true,
+          consolidated_media_player: false,
+          canvas_k6_theme: false,
+          new_math_equation_handling: true,
+        },
+        current_user: {
+          id: "339810",
+          anonymous_id: "7a76",
+          display_name: "Guillem Alomar Cladera",
+          avatar_image_url:
+            "https://aula.uoc.edu/images/messages/avatar-50.png",
+          html_url: "https://aula.uoc.edu/about/339810",
+          pronouns: null,
+          avatar_is_fallback: true,
+          email: "galomarcladera@uoc.edu",
+        },
+        current_user_is_admin: false,
+        page_view_update_url:
+          "/page_views/992d5372-8622-4c64-8614-2a67750c9354?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiOTkyZDUzNzItODYyMi00YzY0LTg2MTQtMmE2Nzc1MGM5MzU0IiwidSI6MTg2NjcwMDAwMDAwMzM5ODEwLCJjIjoiMjAyNC0xMS0xNVQxMjowMTo0MC43MloifQ.NqbeYuPl3kuh4TZS2Pq6aM4KkkRq_DruF-tP3t061t4",
+        context_asset_string: "course_40743",
+        ping_url: "https://aula.uoc.edu/api/v1/courses/40743/ping",
+        TIMEZONE: "Europe/Madrid",
+        CONTEXT_TIMEZONE: "Europe/Madrid",
+        LOCALES: ["es-ES", "es", "en"],
+        BIGEASY_LOCALE: "es_ES",
+        FULLCALENDAR_LOCALE: "es-es",
+        MOMENT_LOCALE: "es",
+        rce_auto_save_max_age_ms: 86400000,
+        K5_USER: false,
+        USE_CLASSIC_FONT: false,
+        K5_HOMEROOM_COURSE: false,
+        K5_SUBJECT_COURSE: false,
+        LOCALE_TRANSLATION_FILE:
+          "/dist/javascripts/translations/es-ES-490c61cdc3.json",
+        ACCOUNT_ID: "891",
+        user_cache_key:
+          "Z2k5eXp6aTQ5YlFFOEhuWkhocjV1UzJsWVl0NWZXc09ONFp1ZmM5anZ5Zlc9\nO1twLTA/OntQXz1IVXBncmFxZTtuamFsa2hwdm9pdWxraW1tYXFld2c=\n",
+        current_context: {
+          id: "40743",
+          name: "SQL para Análisis de Datos - Aula 1",
+          type: "Course",
+          url: "https://aula.uoc.edu/courses/40743",
+        },
+        badge_counts: { submissions: 0 },
+        notices: [],
+        active_context_tab: "files",
+      };
+      BRANDABLE_CSS_HANDLEBARS_INDEX = [
+        [
+          "new_styles_normal_contrast",
+          "new_styles_high_contrast",
+          "new_styles_normal_contrast_rtl",
+          "new_styles_high_contrast_rtl",
+        ],
+        {
+          10: ["908ffbc673", 0, "d5c9044c6e", 2],
+          15: ["c8540c43a4", 0, "0a2196be1d", 2],
+          19: ["df5777ed9c"],
+          61: ["b8f6d0d1fa", "c3396c44a9", "cfc0690334", "1c0f3762fa"],
+          67: ["700335fb7b", 0, "1cc2485e2c", 2],
+          71: ["8ac0336ef0", "bf3093677a", "a8146a011b", "449171073f"],
+          "06": ["ba28819778", 0, "96b99aafe5", 2],
+          f0: ["b349f31f5e", 0, 0, 0],
+          c8: ["718c8509f5", "33cd4c40e3", "03d0fbcbe8", "ec23096f0d"],
+          "1e": ["6eb4ecac8e", "4100cb65ce", "0faf4716c8", "bed54fd75e"],
+          b3: ["e5da23fb43", "0911fc8ed3", "05b2bb5a6f", "ba2585de5c"],
+          "0c": ["4dae5befd2", 0, "c18876be89", 2],
+          da: ["b5a7f9cd8f", "a4e5066985", "773390ae11", "8e9071910c"],
+          "1d": ["2128789890", 0, "e568085637", 2],
+          "08": ["64bff5a97d"],
+          e2: ["11429f119a"],
+          "9f": ["d39b291ba6", 0, 0, 0],
+          "2b": ["c491abf31e", "b11dc54da6", "b58622671f", "6bb4a7ae9e"],
+          "2c": ["8a926fc28b", 0, 0, 0],
+          c2: ["6f2721ae01"],
+          "9c": ["c31821c764", 0, "1693aba1da", 2],
+          c5: ["44c6024769", "31150a4a27", "53dd277fa9", "5fe61c91c2"],
+          f2: ["51574f9b13"],
+        },
+      ];
+      REMOTES = {};
+    </script>
+    <script
+      src="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/10e332c6d9e1978f949c94f99ee82b15/variables-7dd4b80918af0e0218ec0229e4bd5873.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/Europe/Madrid-78da75a57d.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/Europe/Madrid-78da75a57d.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/es_ES-b838eb0547.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/moment/locale/es-chunk-3ee624200c7e8107.js"
+      defer="defer"
+    ></script>
+    <script
+      src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/react-entry-ee6302752258bee2.js"
+      crossorigin="anonymous"
+      defer="defer"
+    ></script>
+    <script
+      src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/main-entry-4cf7c2a2e6d4e0ae.js"
+      crossorigin="anonymous"
+      defer="defer"
+    ></script>
+    <script>
+      //<![CDATA[
+      (window.bundles || (window.bundles = [])).push("module_sequence_footer");
+      (window.bundles || (window.bundles = [])).push("file_show");
+      (window.bundles || (window.bundles = [])).push("navigation_header");
+      //]]>
+    </script>
+
+    <style type="text/css">
+      /*
+ * Copyright (C) 2024 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+      /* TODO make mostly/fully InstUI? */
+      .background__10xGb {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    <style type="text/css">
+      /*
+ * Copyright (C) 2024 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+      .contentLayout__3iLMn {
+        @media (min-width: 48rem) and (max-width: 80rem) {
+          /* 768px – 1280px */
+          padding: 5rem 0 8rem; /* 80px 128px */
+        }
+      }
+
+      .contentLayout__wrapper__2zTIp {
+        height: 100%;
+        padding: 2.25rem 1.5rem; /* 36px 24px */
+
+        @media (min-width: 48rem) {
+          /* 768px */
+          height: unset;
+          margin: 0 auto;
+          padding: 3.75rem 6.25rem; /* 60px 100px */
+          width: 35.75rem; /* 572px */
+        }
+
+        @media (min-width: 80rem) {
+          /* 1280px */
+          height: 100%;
+          margin: unset;
+          padding: 5rem; /* 80px */
+          width: 45rem; /* 720px */
+        }
+      }
+
+      .contentLayout__background__11nNL {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+
+        @media (min-width: 80rem) {
+          /* 1280px */
+          left: 45rem; /* 720px */
+        }
+      }
+    </style>
+    <style type="text/css">
+      /*
+ * Copyright (C) 2024 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+      @media (min-width: 48rem) {
+        /* 768px */
+        .footer__logo__1RM-A {
+          left: 50%;
+          position: absolute;
+          top: calc(100% + 3.4375rem); /* 55px */
+          transform: translateX(-50%);
+        }
+      }
+
+      @media (min-width: 80rem) {
+        /* 1280px */
+        .footer__logo__1RM-A {
+          bottom: 3.75rem; /* 60px */
+          left: auto;
+          position: fixed;
+          right: 3.75rem; /* 60px */
+          top: unset;
+          transform: none;
+        }
+      }
+    </style>
+    <style type="text/css">
+      /*
+ * Copyright (C) 2024 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+      /* TODO make mostly/fully InstUI? */
+      .loginLogo__2HCx0 {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem; /* 12px */
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+
+        img {
+          display: block;
+          height: 3.4375rem; /* 55px */
+          object-fit: contain;
+          width: 11.25rem; /* 180px */
+        }
+
+        .loginLogo__desc__nflZ3 {
+          font-size: 0.875rem; /* 14px */
+          margin-top: 0.5rem; /* 8px */
+        }
+
+        @media (min-width: 48rem) {
+          img {
+            height: 4.0625rem; /* 65px */
+            width: 13.75rem; /* 220px */
+          }
+        }
+
+        @media (min-width: 80rem) {
+          img {
+            height: 5.3125rem; /* 85px */
+            width: 16.25rem; /* 260px */
+          }
+        }
+      }
+    </style>
+    <style type="text/css"></style>
+    <style type="text/css">
+      .mejs-offscreen {
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        clip-path: polygon(0px 0, 0 0, 0 0, 0 0);
+        position: absolute !important;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+      }
+      .mejs-container {
+        position: relative;
+        background: #000;
+        font-family: Helvetica, Arial, serif;
+        text-align: left;
+        vertical-align: top;
+        text-indent: 0;
+      }
+      .mejs-fill-container,
+      .mejs-fill-container .mejs-container {
+        width: 100%;
+        height: 100%;
+      }
+      .mejs-fill-container {
+        overflow: hidden;
+      }
+      .mejs-container:focus {
+        outline: 0;
+      }
+      .me-plugin {
+        position: absolute;
+      }
+      .mejs-embed,
+      .mejs-embed body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #000;
+        overflow: hidden;
+      }
+      .mejs-fullscreen {
+        overflow: hidden !important;
+      }
+      .mejs-container-fullscreen {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        z-index: 1000;
+      }
+      .mejs-container-fullscreen .mejs-mediaelement,
+      .mejs-container-fullscreen video {
+        width: 100%;
+        height: 100%;
+      }
+      .mejs-clear {
+        clear: both;
+      }
+      .mejs-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .mejs-mediaelement {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .mejs-poster {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      :root .mejs-poster img {
+        display: none;
+      }
+      .mejs-poster img {
+        border: 0;
+        padding: 0;
+      }
+      .mejs-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .mejs-overlay-play {
+        cursor: pointer;
+      }
+      .mejs-overlay-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin: -50px 0 0 -50px;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/ab412966d30a966c.svg)
+          no-repeat;
+      }
+      .no-svg .mejs-overlay-button {
+        background-image: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/403b9897d2f9584a.png);
+      }
+      .mejs-overlay:hover .mejs-overlay-button {
+        background-position: 0 -100px;
+      }
+      .mejs-overlay-loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin: -40px 0 0 -40px;
+        background: #333;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(0, 0, 0, 0.9);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(50, 50, 50, 0.9)),
+          to(rgba(0, 0, 0, 0.9))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.9),
+          rgba(0, 0, 0, 0.9)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.9),
+          rgba(0, 0, 0, 0.9)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.9),
+          rgba(0, 0, 0, 0.9)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.9),
+          rgba(0, 0, 0, 0.9)
+        );
+        background: linear-gradient(rgba(50, 50, 50, 0.9), rgba(0, 0, 0, 0.9));
+      }
+      .mejs-overlay-loading span {
+        display: block;
+        width: 80px;
+        height: 80px;
+        background: transparent
+          url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/3d2aa6c0efad5113.gif)
+          50% 50% no-repeat;
+      }
+      .mejs-container .mejs-controls {
+        position: absolute;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        left: 0;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(0, 0, 0, 0.7);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(50, 50, 50, 0.7)),
+          to(rgba(0, 0, 0, 0.7))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.7),
+          rgba(0, 0, 0, 0.7)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.7),
+          rgba(0, 0, 0, 0.7)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.7),
+          rgba(0, 0, 0, 0.7)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.7),
+          rgba(0, 0, 0, 0.7)
+        );
+        background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
+        height: 30px;
+        width: 100%;
+      }
+      .mejs-container .mejs-controls div {
+        list-style-type: none;
+        background-image: none;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        width: 26px;
+        height: 26px;
+        font-size: 11px;
+        line-height: 11px;
+        font-family: Helvetica, Arial, serif;
+        border: 0;
+      }
+      .mejs-controls .mejs-button button {
+        cursor: pointer;
+        display: block;
+        font-size: 0;
+        line-height: 0;
+        text-decoration: none;
+        margin: 7px 5px;
+        padding: 0;
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        border: 0;
+        background: transparent
+          url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/e63625629c427008.svg)
+          no-repeat;
+      }
+      .no-svg .mejs-controls .mejs-button button {
+        background-image: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/21af56cf08cc9170.png);
+      }
+      .mejs-controls .mejs-button button:focus {
+        outline: dotted 1px #999;
+      }
+      .mejs-container .mejs-controls .mejs-time {
+        color: #fff;
+        display: block;
+        height: 17px;
+        width: auto;
+        padding: 10px 3px 0;
+        overflow: hidden;
+        text-align: center;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+      }
+      .mejs-container .mejs-controls .mejs-time a {
+        color: #fff;
+        font-size: 11px;
+        line-height: 12px;
+        display: block;
+        float: left;
+        margin: 1px 2px 0 0;
+        width: auto;
+      }
+      .mejs-controls .mejs-play button {
+        background-position: 0 0;
+      }
+      .mejs-controls .mejs-pause button {
+        background-position: 0 -16px;
+      }
+      .mejs-controls .mejs-stop button {
+        background-position: -112px 0;
+      }
+      .mejs-controls div.mejs-time-rail {
+        direction: ltr;
+        width: 200px;
+        padding-top: 5px;
+      }
+      .mejs-controls .mejs-time-rail span,
+      .mejs-controls .mejs-time-rail a {
+        display: block;
+        position: absolute;
+        width: 180px;
+        height: 10px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      .mejs-controls .mejs-time-rail .mejs-time-total {
+        margin: 5px;
+        background: #333;
+        background: rgba(50, 50, 50, 0.8);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(30, 30, 30, 0.8)),
+          to(rgba(60, 60, 60, 0.8))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        background: linear-gradient(
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+      }
+      .mejs-controls .mejs-time-rail .mejs-time-buffering {
+        width: 100%;
+        background-image: -o-linear-gradient(
+          -45deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
+        background-image: -webkit-gradient(
+          linear,
+          0 100%,
+          100% 0,
+          color-stop(0.25, rgba(255, 255, 255, 0.15)),
+          color-stop(0.25, transparent),
+          color-stop(0.5, transparent),
+          color-stop(0.5, rgba(255, 255, 255, 0.15)),
+          color-stop(0.75, rgba(255, 255, 255, 0.15)),
+          color-stop(0.75, transparent),
+          to(transparent)
+        );
+        background-image: -webkit-linear-gradient(
+          -45deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
+        background-image: -moz-linear-gradient(
+          -45deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
+        background-image: -ms-linear-gradient(
+          -45deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
+        background-image: linear-gradient(
+          -45deg,
+          rgba(255, 255, 255, 0.15) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.15) 50%,
+          rgba(255, 255, 255, 0.15) 75%,
+          transparent 75%,
+          transparent
+        );
+        -webkit-background-size: 15px 15px;
+        -moz-background-size: 15px 15px;
+        -o-background-size: 15px 15px;
+        background-size: 15px 15px;
+        -webkit-animation: buffering-stripes 2s linear infinite;
+        -moz-animation: buffering-stripes 2s linear infinite;
+        -ms-animation: buffering-stripes 2s linear infinite;
+        -o-animation: buffering-stripes 2s linear infinite;
+        animation: buffering-stripes 2s linear infinite;
+      }
+      @-webkit-keyframes buffering-stripes {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 30px 0;
+        }
+      }
+      @-moz-keyframes buffering-stripes {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 30px 0;
+        }
+      }
+      @-ms-keyframes buffering-stripes {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 30px 0;
+        }
+      }
+      @-o-keyframes buffering-stripes {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 30px 0;
+        }
+      }
+      @keyframes buffering-stripes {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 30px 0;
+        }
+      }
+      .mejs-controls .mejs-time-rail .mejs-time-loaded {
+        background: #3caac8;
+        background: rgba(60, 170, 200, 0.8);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(44, 124, 145, 0.8)),
+          to(rgba(78, 183, 212, 0.8))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(44, 124, 145, 0.8),
+          rgba(78, 183, 212, 0.8)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(44, 124, 145, 0.8),
+          rgba(78, 183, 212, 0.8)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(44, 124, 145, 0.8),
+          rgba(78, 183, 212, 0.8)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(44, 124, 145, 0.8),
+          rgba(78, 183, 212, 0.8)
+        );
+        background: linear-gradient(
+          rgba(44, 124, 145, 0.8),
+          rgba(78, 183, 212, 0.8)
+        );
+        width: 0;
+      }
+      .mejs-controls .mejs-time-rail .mejs-time-current {
+        background: #fff;
+        background: rgba(255, 255, 255, 0.8);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(255, 255, 255, 0.9)),
+          to(rgba(200, 200, 200, 0.8))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        width: 0;
+      }
+      .mejs-controls .mejs-time-rail .mejs-time-handle {
+        display: none;
+        position: absolute;
+        margin: 0;
+        width: 10px;
+        background: #fff;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: solid 2px #333;
+        top: -2px;
+        text-align: center;
+      }
+      .mejs-controls .mejs-time-rail .mejs-time-float {
+        position: absolute;
+        display: none;
+        background: #eee;
+        width: 36px;
+        height: 17px;
+        border: solid 1px #333;
+        top: -26px;
+        margin-left: -18px;
+        text-align: center;
+        color: #111;
+      }
+      .mejs-controls .mejs-time-rail .mejs-time-float-current {
+        margin: 2px;
+        width: 30px;
+        display: block;
+        text-align: center;
+        left: 0;
+      }
+      .mejs-controls .mejs-time-rail .mejs-time-float-corner {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        line-height: 0;
+        border: solid 5px #eee;
+        border-color: #eee transparent transparent;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        top: 15px;
+        left: 13px;
+      }
+      .mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float {
+        width: 48px;
+      }
+      .mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-current {
+        width: 44px;
+      }
+      .mejs-long-video .mejs-controls .mejs-time-rail .mejs-time-float-corner {
+        left: 18px;
+      }
+      .mejs-controls .mejs-fullscreen-button button {
+        background-position: -32px 0;
+      }
+      .mejs-controls .mejs-unfullscreen button {
+        background-position: -32px -16px;
+      }
+      .mejs-controls .mejs-volume-button {
+      }
+      .mejs-controls .mejs-mute button {
+        background-position: -16px -16px;
+      }
+      .mejs-controls .mejs-unmute button {
+        background-position: -16px 0;
+      }
+      .mejs-controls .mejs-volume-button {
+        position: relative;
+      }
+      .mejs-controls .mejs-volume-button .mejs-volume-slider {
+        height: 115px;
+        width: 25px;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(50, 50, 50, 0.7);
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        top: -115px;
+        left: 0;
+        z-index: 1;
+        position: absolute;
+        margin: 0;
+      }
+      .mejs-controls .mejs-volume-button:hover {
+        -webkit-border-radius: 0 0 4px 4px;
+        -moz-border-radius: 0 0 4px 4px;
+        border-radius: 0 0 4px 4px;
+      }
+      .mejs-controls
+        .mejs-volume-button
+        .mejs-volume-slider
+        .mejs-volume-total {
+        position: absolute;
+        left: 11px;
+        top: 8px;
+        width: 2px;
+        height: 100px;
+        background: #ddd;
+        background: rgba(255, 255, 255, 0.5);
+        margin: 0;
+      }
+      .mejs-controls
+        .mejs-volume-button
+        .mejs-volume-slider
+        .mejs-volume-current {
+        position: absolute;
+        left: 11px;
+        top: 8px;
+        width: 2px;
+        height: 100px;
+        background: #ddd;
+        background: rgba(255, 255, 255, 0.9);
+        margin: 0;
+      }
+      .mejs-controls
+        .mejs-volume-button
+        .mejs-volume-slider
+        .mejs-volume-handle {
+        position: absolute;
+        left: 4px;
+        top: -3px;
+        width: 16px;
+        height: 6px;
+        background: #ddd;
+        background: rgba(255, 255, 255, 0.9);
+        cursor: N-resize;
+        -webkit-border-radius: 1px;
+        -moz-border-radius: 1px;
+        border-radius: 1px;
+        margin: 0;
+      }
+      .mejs-controls a.mejs-horizontal-volume-slider {
+        height: 26px;
+        width: 56px;
+        position: relative;
+        display: block;
+        float: left;
+        vertical-align: middle;
+      }
+      .mejs-controls
+        .mejs-horizontal-volume-slider
+        .mejs-horizontal-volume-total {
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 50px;
+        height: 8px;
+        margin: 0;
+        padding: 0;
+        font-size: 1px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        background: #333;
+        background: rgba(50, 50, 50, 0.8);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(30, 30, 30, 0.8)),
+          to(rgba(60, 60, 60, 0.8))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+        background: linear-gradient(
+          rgba(30, 30, 30, 0.8),
+          rgba(60, 60, 60, 0.8)
+        );
+      }
+      .mejs-controls
+        .mejs-horizontal-volume-slider
+        .mejs-horizontal-volume-current {
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 50px;
+        height: 8px;
+        margin: 0;
+        padding: 0;
+        font-size: 1px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        background: #fff;
+        background: rgba(255, 255, 255, 0.8);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(255, 255, 255, 0.9)),
+          to(rgba(200, 200, 200, 0.8))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+        background: linear-gradient(
+          rgba(255, 255, 255, 0.9),
+          rgba(200, 200, 200, 0.8)
+        );
+      }
+      .mejs-controls
+        .mejs-horizontal-volume-slider
+        .mejs-horizontal-volume-handle {
+        display: none;
+      }
+      .mejs-controls .mejs-captions-button {
+        position: relative;
+      }
+      .mejs-controls .mejs-captions-button button {
+        background-position: -48px 0;
+      }
+      .mejs-controls .mejs-captions-button .mejs-captions-selector {
+        position: absolute;
+        bottom: 26px;
+        right: -51px;
+        width: 85px;
+        height: 100px;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(50, 50, 50, 0.7);
+        border: solid 1px transparent;
+        padding: 10px 10px 0;
+        overflow: hidden;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+      .mejs-controls .mejs-captions-button .mejs-captions-selector ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style-type: none !important;
+        overflow: hidden;
+      }
+      .mejs-controls .mejs-captions-button .mejs-captions-selector ul li {
+        margin: 0 0 6px;
+        padding: 0;
+        list-style-type: none !important;
+        display: block;
+        color: #fff;
+        overflow: hidden;
+      }
+      .mejs-controls .mejs-captions-button .mejs-captions-selector ul li input {
+        clear: both;
+        float: left;
+        margin: 3px 3px 0 5px;
+      }
+      .mejs-controls .mejs-captions-button .mejs-captions-selector ul li label {
+        width: 55px;
+        float: left;
+        padding: 4px 0 0;
+        line-height: 15px;
+        font-family: Helvetica, Arial, serif;
+        font-size: 10px;
+      }
+      .mejs-controls .mejs-captions-button .mejs-captions-translations {
+        font-size: 10px;
+        margin: 0 0 5px;
+      }
+      .mejs-chapters {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right: solid 1px #fff;
+        width: 10000px;
+        z-index: 1;
+      }
+      .mejs-chapters .mejs-chapter {
+        position: absolute;
+        float: left;
+        background: #222;
+        background: rgba(0, 0, 0, 0.7);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(50, 50, 50, 0.7)),
+          to(rgba(0, 0, 0, 0.7))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.7),
+          rgba(0, 0, 0, 0.7)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.7),
+          rgba(0, 0, 0, 0.7)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.7),
+          rgba(0, 0, 0, 0.7)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(50, 50, 50, 0.7),
+          rgba(0, 0, 0, 0.7)
+        );
+        background: linear-gradient(rgba(50, 50, 50, 0.7), rgba(0, 0, 0, 0.7));
+        filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#323232, endColorstr=#000000);
+        overflow: hidden;
+        border: 0;
+      }
+      .mejs-chapters .mejs-chapter .mejs-chapter-block {
+        font-size: 11px;
+        color: #fff;
+        padding: 5px;
+        display: block;
+        border-right: solid 1px #333;
+        border-bottom: solid 1px #333;
+        cursor: pointer;
+      }
+      .mejs-chapters .mejs-chapter .mejs-chapter-block-last {
+        border-right: 0;
+      }
+      .mejs-chapters .mejs-chapter .mejs-chapter-block:hover {
+        background: #666;
+        background: rgba(102, 102, 102, 0.7);
+        background: -webkit-gradient(
+          linear,
+          0 0,
+          0 100%,
+          from(rgba(102, 102, 102, 0.7)),
+          to(rgba(50, 50, 50, 0.6))
+        );
+        background: -webkit-linear-gradient(
+          top,
+          rgba(102, 102, 102, 0.7),
+          rgba(50, 50, 50, 0.6)
+        );
+        background: -moz-linear-gradient(
+          top,
+          rgba(102, 102, 102, 0.7),
+          rgba(50, 50, 50, 0.6)
+        );
+        background: -o-linear-gradient(
+          top,
+          rgba(102, 102, 102, 0.7),
+          rgba(50, 50, 50, 0.6)
+        );
+        background: -ms-linear-gradient(
+          top,
+          rgba(102, 102, 102, 0.7),
+          rgba(50, 50, 50, 0.6)
+        );
+        background: linear-gradient(
+          rgba(102, 102, 102, 0.7),
+          rgba(50, 50, 50, 0.6)
+        );
+        filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr=#666666, endColorstr=#323232);
+      }
+      .mejs-chapters .mejs-chapter .mejs-chapter-block .ch-title {
+        font-size: 12px;
+        font-weight: 700;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0 0 3px;
+        line-height: 12px;
+      }
+      .mejs-chapters .mejs-chapter .mejs-chapter-block .ch-timespan {
+        font-size: 12px;
+        line-height: 12px;
+        margin: 3px 0 4px;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .mejs-captions-layer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        line-height: 20px;
+        font-size: 16px;
+        color: #fff;
+      }
+      .mejs-captions-layer a {
+        color: #fff;
+        text-decoration: underline;
+      }
+      .mejs-captions-layer[lang="ar"] {
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .mejs-captions-position {
+        position: absolute;
+        width: 100%;
+        bottom: 15px;
+        left: 0;
+      }
+      .mejs-captions-position-hover {
+        bottom: 35px;
+      }
+      .mejs-captions-text,
+      .mejs__captions-text * {
+        padding: 0;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(20, 20, 20, 0.5);
+        white-space: pre-wrap;
+        -webkit-box-shadow: 5px 0 0 rgba(20, 20, 20, 0.5),
+          -5px 0 0 rgba(20, 20, 20, 0.5);
+        box-shadow: 5px 0 0 rgba(20, 20, 20, 0.5),
+          -5px 0 0 rgba(20, 20, 20, 0.5);
+      }
+      .me-cannotplay {
+      }
+      .me-cannotplay a {
+        color: #fff;
+        font-weight: 700;
+      }
+      .me-cannotplay span {
+        padding: 15px;
+        display: block;
+      }
+      .mejs-controls .mejs-loop-off button {
+        background-position: -64px -16px;
+      }
+      .mejs-controls .mejs-loop-on button {
+        background-position: -64px 0;
+      }
+      .mejs-controls .mejs-backlight-off button {
+        background-position: -80px -16px;
+      }
+      .mejs-controls .mejs-backlight-on button {
+        background-position: -80px 0;
+      }
+      .mejs-controls .mejs-picturecontrols-button {
+        background-position: -96px 0;
+      }
+      .mejs-contextmenu {
+        position: absolute;
+        width: 150px;
+        padding: 10px;
+        border-radius: 4px;
+        top: 0;
+        left: 0;
+        background: #fff;
+        border: solid 1px #999;
+        z-index: 1001;
+      }
+      .mejs-contextmenu .mejs-contextmenu-separator {
+        height: 1px;
+        font-size: 0;
+        margin: 5px 6px;
+        background: #333;
+      }
+      .mejs-contextmenu .mejs-contextmenu-item {
+        font-family: Helvetica, Arial, serif;
+        font-size: 12px;
+        padding: 4px 6px;
+        cursor: pointer;
+        color: #333;
+      }
+      .mejs-contextmenu .mejs-contextmenu-item:hover {
+        background: #2c7c91;
+        color: #fff;
+      }
+      .mejs-controls .mejs-sourcechooser-button {
+        position: relative;
+      }
+      .mejs-controls .mejs-sourcechooser-button button {
+        background-position: -128px 0;
+      }
+      .mejs-controls .mejs-sourcechooser-button .mejs-sourcechooser-selector {
+        position: absolute;
+        bottom: 26px;
+        right: -10px;
+        width: 130px;
+        height: 100px;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(50, 50, 50, 0.7);
+        border: solid 1px transparent;
+        padding: 10px;
+        overflow: hidden;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+      .mejs-controls
+        .mejs-sourcechooser-button
+        .mejs-sourcechooser-selector
+        ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style-type: none !important;
+        overflow: hidden;
+      }
+      .mejs-controls
+        .mejs-sourcechooser-button
+        .mejs-sourcechooser-selector
+        ul
+        li {
+        margin: 0 0 6px;
+        padding: 0;
+        list-style-type: none !important;
+        display: block;
+        color: #fff;
+        overflow: hidden;
+      }
+      .mejs-controls
+        .mejs-sourcechooser-button
+        .mejs-sourcechooser-selector
+        ul
+        li
+        input {
+        clear: both;
+        float: left;
+        margin: 3px 3px 0 5px;
+      }
+      .mejs-controls
+        .mejs-sourcechooser-button
+        .mejs-sourcechooser-selector
+        ul
+        li
+        label {
+        width: 100px;
+        float: left;
+        padding: 4px 0 0;
+        line-height: 15px;
+        font-family: Helvetica, Arial, serif;
+        font-size: 10px;
+      }
+      .mejs-postroll-layer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(50, 50, 50, 0.7);
+        z-index: 1000;
+        overflow: hidden;
+      }
+      .mejs-postroll-layer-content {
+        width: 100%;
+        height: 100%;
+      }
+      .mejs-postroll-close {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(50, 50, 50, 0.7);
+        color: #fff;
+        padding: 4px;
+        z-index: 100;
+        cursor: pointer;
+      }
+      div.mejs-speed-button {
+        width: 46px !important;
+        position: relative;
+      }
+      .mejs-controls .mejs-button.mejs-speed-button button {
+        background: transparent;
+        width: 36px;
+        font-size: 11px;
+        line-height: normal;
+        color: #fff;
+      }
+      .mejs-controls .mejs-speed-button .mejs-speed-selector {
+        position: absolute;
+        top: -100px;
+        left: -10px;
+        width: 60px;
+        height: 100px;
+        background: url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/019e02a0194687d6.png);
+        background: rgba(50, 50, 50, 0.7);
+        border: solid 1px transparent;
+        padding: 0;
+        overflow: hidden;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+      }
+      .mejs-controls
+        .mejs-speed-button
+        .mejs-speed-selector
+        ul
+        li
+        label.mejs-speed-selected {
+        color: rgba(33, 248, 248, 1);
+      }
+      .mejs-controls .mejs-speed-button .mejs-speed-selector ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+        list-style-type: none !important;
+        overflow: hidden;
+      }
+      .mejs-controls .mejs-speed-button .mejs-speed-selector ul li {
+        margin: 0 0 6px;
+        padding: 0 10px;
+        list-style-type: none !important;
+        display: block;
+        color: #fff;
+        overflow: hidden;
+      }
+      .mejs-controls .mejs-speed-button .mejs-speed-selector ul li input {
+        clear: both;
+        float: left;
+        margin: 3px 3px 0 5px;
+      }
+      .mejs-controls .mejs-speed-button .mejs-speed-selector ul li label {
+        width: 60px;
+        float: left;
+        padding: 4px 0 0;
+        line-height: 15px;
+        font-family: Helvetica, Arial, serif;
+        font-size: 11px;
+        color: #fff;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+      .mejs-controls .mejs-speed-button .mejs-speed-selector ul li:hover {
+        background-color: #c8c8c8 !important;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+      }
+      .mejs-controls .mejs-button.mejs-jump-forward-button {
+        background: transparent
+          url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/1b04fe65cf397777.png)
+          no-repeat 3px 3px;
+      }
+      .mejs-controls .mejs-button.mejs-jump-forward-button button {
+        background: transparent;
+        font-size: 9px;
+        line-height: normal;
+        color: #fff;
+      }
+      .mejs-controls .mejs-button.mejs-skip-back-button {
+        background: transparent
+          url(https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/83bc028944a3cf2a.png)
+          no-repeat 3px 3px;
+      }
+      .mejs-controls .mejs-button.mejs-skip-back-button button {
+        background: transparent;
+        font-size: 9px;
+        line-height: normal;
+        color: #fff;
+      }
+    </style>
+    <style type="text/css">
+      /*
+ * Copyright (C) 2014 - present Instructure, Inc.
+ *
+ * This file is part of Canvas.
+ *
+ * Canvas is free software: you can redistribute it and/or modify it under
+ * the terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, version 3 of the License.
+ *
+ * Canvas is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+      /* customizations to mediaelementplayer css */
+
+      /*
+  Because this file is not proccessed by our brandable_css sass pipeline,
+  it cannot use our sass-direction helpers. So we have to handle RTL manually
+  by putting direction-specific styles in [dir="ltr"] or [dir="rtl"] blocks.
+*/
+      /* stylelint-disable property-disallowed-list, declaration-property-value-disallowed-list */
+
+      /* good menu widths */
+      .mejs-sourcechooser-selector {
+        width: 160px;
+      }
+      .mejs-sourcechooser-selector label {
+        width: 160px !important;
+      }
+
+      .mejs-captions-selector {
+        width: 105px;
+      }
+      [dir="ltr"] .mejs-captions-selector {
+        text-align: left;
+      }
+      [dir="rtl"] .mejs-captions-selector {
+        text-align: right;
+      }
+
+      .mejs-captions-selector label {
+        width: 70px !important;
+      }
+
+      /* Subtitile upload link */
+      .mejs-captions-selector .upload-track {
+        color: white;
+        margin-top: 3px;
+        margin-bottom: 5px;
+      }
+      [dir="ltr"] .mejs-captions-selector .upload-track {
+        margin-right: 0px;
+        margin-left: 5px;
+        float: left;
+      }
+      [dir="rtl"] .mejs-captions-selector .upload-track {
+        margin-left: 0px;
+        margin-right: 5px;
+        float: right;
+      }
+
+      /* inherited caption "?" icon for tooltip */
+      .mejs-captions-selector .track-tip-container {
+        position: absolute;
+        top: 5px;
+      }
+
+      /* "x" button to remove a subtitle */
+      .mejs-captions-selector a[data-remove] {
+        position: absolute;
+        top: 5px;
+        color: white;
+      }
+      [dir="ltr"] .mejs-captions-selector a[data-remove] {
+        right: 5px;
+      }
+      [dir="rtl"] .mejs-captions-selector a[data-remove] {
+        left: 5px;
+      }
+
+      [dir="ltr"] .mejs-captions-selector .track-tip-container {
+        right: 6px;
+      }
+      [dir="rtl"] .mejs-captions-selector .track-tip-container {
+        left: 6px;
+      }
+
+      /* style menu items without a radio button */
+      .mejs-button [role="menu"] {
+        padding: 0 !important;
+      }
+      /* compensate for above 0 padding */
+      .mejs-button [role="menu"] ul li {
+        position: relative;
+        padding: 0 10px !important;
+      }
+      /* add a hover effect */
+      .mejs-button [role="menu"] ul li:hover {
+        background-color: #c8c8c8 !important;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+      }
+      .mejs-button [role="menu"] ul li input {
+        border: 0;
+        clip: rect(0 0 0 0);
+        position: absolute;
+        overflow: hidden;
+        margin: -1px;
+        padding: 0;
+        width: 1px;
+        height: 1px;
+      }
+
+      .mejs-button
+        [role="menu"]
+        ul
+        li
+        input[type="radio"]:not(:checked)
+        + span {
+        display: none;
+      }
+
+      .mejs-button [role="menu"] ul li input[type="radio"]:checked + span {
+        display: inline;
+        position: absolute;
+        top: 5px;
+        left: 2px;
+      }
+
+      .mejs-button [role="menu"] ul li label {
+        cursor: pointer;
+      }
+      [dir="ltr"] .mejs-button [role="menu"] ul li label {
+        margin-left: 5px;
+      }
+      [dir="rtl"] .mejs-button [role="menu"] ul li label {
+        margin-right: 5px;
+      }
+
+      .mejs-button [role="menu"] label.mejs-selected {
+        color: #21f8f8 !important;
+      }
+
+      .mejs-button.mejs-speed-button .mejs-speed-selector {
+        height: 150px;
+      }
+      .mejs-button.mejs-speed-button .mejs-speed-selector li,
+      label {
+        margin-bottom: 0px;
+      }
+
+      /* stylelint-enable property-disallowed-list, declaration-property-value-disallowed-list */
+    </style>
+    <style id="inert-style">
+      [inert] {
+        pointer-events: none;
+        cursor: default;
+      }
+
+      [inert],
+      [inert] * {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+      }
+    </style>
+    <script
+      src="//uoc.eesysoft.com/v2/dist/loader.js?__bn=191"
+      async=""
+      type="text/javascript"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://uoc.eesysoft.com/v2/dist/jQueryPrivate.js?v=191"
+      async=""
+    ></script>
+    <link
+      type="text/css"
+      href="https://uoc.eesysoft.com/v2/dist/compiled/css/proactiveresources-base.min.css?__md5=1145014158_&amp;__bn=191&amp;__h=aula.uoc.edu"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="https://uoc.eesysoft.com/resources/proactiveresources/style.css?__md5=1145014158_&amp;__bn=191&amp;__h=aula.uoc.edu"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="https://uoc.eesysoft.com/resources/style_v2/eesysoft-template/assets/css/support-center.min.css?__md5=1145014158_&amp;__bn=191&amp;__h=aula.uoc.edu"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="https://uoc.eesysoft.com/resources/override-proactive.css?__md5=1145014158_&amp;__bn=191&amp;__h=aula.uoc.edu"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="https://uoc.eesysoft.com/v2/dist/compiled/css/support-center-theme-defaults.min.css?__md5=1145014158_&amp;__bn=191&amp;__h=aula.uoc.edu"
+      rel="stylesheet"
+    />
+    <link
+      type="text/css"
+      href="https://uoc.eesysoft.com/v2/dist/compiled/css/support-center-theme-canvas.min.css?__md5=1145014158_&amp;__bn=191&amp;__h=aula.uoc.edu"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://uoc.eesysoft.com/v2/dist/impact.js?__bn=191"
+      async=""
+    ></script>
+    <style data-styled="active" data-styled-version="6.1.8"></style>
+  </head>
+
+  <body
+    class="with-left-side course-menu-expanded files primary-nav-expanded context-course_40743 responsive_student_grades_page webkit chrome no-touch"
+  >
+    <div></div>
+
+    <noscript>
+      <div role="alert" class="ic-flash-static ic-flash-error">
+        <div class="ic-flash__icon" aria-hidden="true">
+          <i class="icon-warning"></i>
+        </div>
+        <h1>
+          Debes tener activado JavaScript para poder acceder a este sitio.
+        </h1>
+      </div>
+    </noscript>
+
+    <div id="flash_message_holder"></div>
+    <div
+      id="flash_screenreader_holder"
+      role="alert"
+      aria-live="assertive"
+      aria-relevant="additions"
+      class="screenreader-only"
+      aria-atomic="true"
+    ></div>
+
+    <div id="application" class="ic-app">
+      <header id="mobile-header" class="no-print">
+        <button
+          type="button"
+          class="Button Button--icon-action-rev Button--large mobile-header-hamburger"
+        >
+          <i class="icon-solid icon-hamburger"></i>
+          <span
+            id="mobileHeaderInboxUnreadBadge"
+            class="menu-item__badge"
+            style="
+              min-width: 0;
+              top: 12px;
+              height: 12px;
+              right: 6px;
+              display: none;
+            "
+          ></span>
+          <span class="screenreader-only">Panel de control</span>
+        </button>
+        <div class="mobile-header-space"></div>
+        <a
+          class="mobile-header-title expandable"
+          href="/courses/40743"
+          role="button"
+          aria-controls="mobileContextNavContainer"
+        >
+          <div>B0.472 - SQL para Análisis de Datos - Aula 1</div>
+          <div>1 Los datos conceptos introductorios.pdf</div>
+        </a>
+        <div class="mobile-header-space"></div>
+        <button
+          type="button"
+          class="Button Button--icon-action-rev Button--large mobile-header-arrow"
+          aria-label="Menú de navegación"
+        >
+          <i class="icon-arrow-open-down" id="mobileHeaderArrowIcon"></i>
+        </button>
+      </header>
+      <nav id="mobileContextNavContainer" aria-expanded="false"></nav>
+
+      <header id="header" class="ic-app-header no-print">
+        <a href="#content" id="skip_navigation_link">Saltar al contenido</a>
+        <div
+          role="region"
+          class="ic-app-header__main-navigation"
+          aria-label="Navegación global"
+        >
+          <div class="ic-app-header__logomark-container">
+            <a href="https://aula.uoc.edu/" class="ic-app-header__logomark">
+              <span class="screenreader-only">Panel de control</span>
+            </a>
+          </div>
+          <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item">
+              <a
+                id="global_nav_profile_link"
+                role="button"
+                href="/profile/settings"
+                class="ic-app-header__menu-list-link"
+              >
+                <div class="menu-item-icon-container">
+                  <div aria-hidden="true" class="fs-exclude ic-avatar">
+                    <img
+                      src="https://aula.uoc.edu/images/messages/avatar-50.png"
+                      alt="Guillem Alomar Cladera"
+                    />
+                  </div>
+                  <span class="menu-item__badge"></span>
+                </div>
+                <div class="menu-item__text">Usuario</div>
+              </a>
+            </li>
+            <li class="ic-app-header__menu-list-item">
+              <a
+                id="global_nav_dashboard_link"
+                href="https://aula.uoc.edu/"
+                class="ic-app-header__menu-list-link"
+              >
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ic-icon-svg ic-icon-svg--dashboard"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 280 200"
+                    enable-background="new 0 0 280 200"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="menu-item__text">Panel de control</div>
+              </a>
+            </li>
+            <li
+              class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active"
+              aria-current="page"
+            >
+              <a
+                id="global_nav_courses_link"
+                role="button"
+                href="/courses"
+                class="ic-app-header__menu-list-link"
+              >
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ic-icon-svg ic-icon-svg--courses"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 280 259"
+                    enable-background="new 0 0 280 259"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="menu-item__text">Asignaturas</div>
+              </a>
+            </li>
+            <li class="menu-item ic-app-header__menu-list-item">
+              <a
+                id="global_nav_calendar_link"
+                href="/calendar"
+                class="ic-app-header__menu-list-link"
+              >
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ic-icon-svg ic-icon-svg--calendar"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 280 280"
+                    enable-background="new 0 0 280 280"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="menu-item__text">Calendario</div>
+              </a>
+            </li>
+            <li class="menu-item ic-app-header__menu-list-item">
+              <!-- TODO: Add back global search when available -->
+              <a
+                id="global_nav_conversations_link"
+                href="/conversations"
+                class="ic-app-header__menu-list-link"
+              >
+                <div class="menu-item-icon-container">
+                  <span aria-hidden="true"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="ic-icon-svg ic-icon-svg--inbox"
+                      version="1.1"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 280 280"
+                      enable-background="new 0 0 280 280"
+                      xml:space="preserve"
+                    >
+                      <path
+                        d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span class="menu-item__badge"></span>
+                </div>
+                <div class="menu-item__text">Bandeja de entrada</div>
+              </a>
+            </li>
+            <li class="menu-item ic-app-header__menu-list-item">
+              <a
+                id="global_nav_history_link"
+                role="button"
+                href="#"
+                class="ic-app-header__menu-list-link"
+              >
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 1920 1920"
+                    class="ic-icon-svg menu-item__icon svg-icon-history"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M960 112.941c-467.125 0-847.059 379.934-847.059 847.059 0 467.125 379.934 847.059 847.059 847.059 467.125 0 847.059-379.934 847.059-847.059 0-467.125-379.934-847.059-847.059-847.059M960 1920C430.645 1920 0 1489.355 0 960S430.645 0 960 0s960 430.645 960 960-430.645 960-960 960m417.905-575.955L903.552 988.28V395.34h112.941v536.47l429.177 321.77-67.765 90.465z"
+                      stroke="none"
+                      stroke-width="1"
+                      fill-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="menu-item__text">Historial</div>
+              </a>
+            </li>
+
+            <li class="ic-app-header__menu-list-item">
+              <a
+                id="global_nav_help_link"
+                role="button"
+                class="ic-app-header__menu-list-link"
+                data-track-category="help system"
+                data-track-label="help button"
+                href="https://help.instructure.com"
+              >
+                <div class="menu-item-icon-container" role="presentation">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ic-icon-svg menu-item__icon svg-icon-help"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 200 200"
+                    enable-background="new 0 0 200 200"
+                    xml:space="preserve"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65"
+                      transform="translate(-5.2 -5.2)"
+                    ></path>
+                  </svg>
+
+                  <span class="menu-item__badge"></span>
+                </div>
+                <div class="menu-item__text">Ayuda</div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ic-app-header__secondary-navigation">
+          <ul class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item">
+              <a
+                id="primaryNavToggle"
+                role="button"
+                href="#"
+                class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle"
+                aria-label="Minimizar navegación global"
+                title="Minimizar navegación global"
+              >
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="ic-icon-svg ic-icon-svg--navtoggle"
+                    version="1.1"
+                    x="0"
+                    y="0"
+                    width="40"
+                    height="32"
+                    viewBox="0 0 40 32"
+                    xml:space="preserve"
+                  >
+                    <path
+                      d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="global_nav_tray_container"></div>
+        <div id="global_nav_tour"></div>
+      </header>
+
+      <div id="instructure_ajax_error_box">
+        <div style="text-align: right; background-color: #fff">
+          <a href="#" class="close_instructure_ajax_error_box_link">Cerrar</a>
+        </div>
+        <iframe
+          id="instructure_ajax_error_result"
+          src="about:blank"
+          style="border: 0"
+          title="Error"
+        ></iframe>
+      </div>
+
+      <div id="wrapper" class="ic-Layout-wrapper">
+        <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button
+            type="button"
+            id="courseMenuToggle"
+            class="Button Button--link ic-app-course-nav-toggle"
+            aria-live="polite"
+            aria-label="Ocultar menú de navegación de asignaturas"
+          >
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+
+          <div class="ic-app-crumbs ic-app-crumbs-enhanced-rubrics">
+            <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+              <ul>
+                <li class="home">
+                  <a href="/"
+                    ><span class="ellipsible ellipsis" style=""
+                      ><i class="icon-home" title="Mi panel de control">
+                        <span class="screenreader-only"
+                          >Mi panel de control</span
+                        >
+                      </i>
+                    </span></a
+                  >
+                </li>
+                <li>
+                  <a href="/courses/40743"
+                    ><span class="ellipsible ellipsis" style=""
+                      >B0.472 - SQL para Análisis de Datos - Aula 1</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="/courses/40743/files"
+                    ><span class="ellipsible ellipsis" style=""
+                      >Archivos</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="/courses/40743/files/4169497"
+                    ><span class="ellipsible ellipsis" style=""
+                      >1 Los datos conceptos introductorios.pdf</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="right-of-crumbs"></div>
+        </div>
+        <div id="main" class="ic-Layout-columns">
+          <div class="ic-Layout-watermark"></div>
+          <div
+            id="left-side"
+            class="ic-app-course-menu ic-sticky-on list-view"
+            style="display: block"
+          >
+            <div id="sticky-container" class="ic-sticky-frame">
+              <span id="section-tabs-header-subtitle" class="ellipsis"
+                >20241</span
+              >
+              <nav
+                role="navigation"
+                aria-label="Menú de navegación de asignaturas"
+              >
+                <ul id="section-tabs">
+                  <li class="section">
+                    <a href="/courses/40743" class="home" tabindex="0"
+                      >Página de inicio</a
+                    >
+                  </li>
+                  <li class="section">
+                    <a
+                      href="/courses/40743/external_tools/8881"
+                      class="context_external_tool_8881"
+                      tabindex="0"
+                      >Plan docente</a
+                    >
+                  </li>
+                  <li class="section">
+                    <a
+                      href="/courses/40743/announcements"
+                      class="announcements"
+                      tabindex="0"
+                      >Anuncios</a
+                    >
+                  </li>
+                  <li class="section">
+                    <a
+                      href="/courses/40743/modules"
+                      class="modules"
+                      tabindex="0"
+                      >Contenidos</a
+                    >
+                  </li>
+                  <li class="section">
+                    <a
+                      href="/courses/40743/discussion_topics"
+                      class="discussions"
+                      tabindex="0"
+                      >Foros de discusión</a
+                    >
+                  </li>
+                  <li class="section">
+                    <a href="/courses/40743/grades" class="grades" tabindex="0"
+                      >Notas</a
+                    >
+                  </li>
+                  <li class="section">
+                    <a href="/courses/40743/users" class="people" tabindex="0"
+                      >Personas</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div id="not_right_side" class="ic-app-main-content">
+            <div id="content-wrapper" class="ic-Layout-contentWrapper">
+              <div id="content" class="ic-Layout-contentMain" role="main">
+                <h2>1 Los datos conceptos introductorios.pdf</h2>
+                <div>
+                  <span style="font-size: 1.2em">
+                    <a
+                      download="true"
+                      href="/courses/40743/files/4169497/download?download_frd=1"
+                      >Download 1 Los datos conceptos introductorios.pdf</a
+                    >
+                  </span>
+                  (843 KB)
+                </div>
+                <div
+                  id="doc_preview"
+                  data-canvadoc_session_url="/api/v1/canvadoc_session?blob=%7B%22anonymous_instructor_annotations%22:null,%22enable_annotations%22:null,%22moderated_grading_allow_list%22:null,%22submission_id%22:null,%22user_id%22:186670000000339810,%22attachment_id%22:4169497,%22type%22:%22canvadoc%22%7D&amp;hmac=8b5aa0f69a6058e18cd87c533323164b5c0f379e"
+                  data-attachment_id="4169497"
+                  data-mimetype="application/pdf"
+                  data-attachment_view_inline_ping_url="https://aula.uoc.edu/courses/40743/files/4169497/inline_view"
+                  data-attachment_preview_processing="true"
+                  style="height: 400px"
+                >
+                  <div
+                    style="
+                      overflow: auto;
+                      resize: vertical;
+                      border: 1px solid transparent;
+                      height: 433px;
+                    "
+                  >
+                    <iframe
+                      src="/api/v1/canvadoc_session?blob=%7B%22anonymous_instructor_annotations%22:null,%22enable_annotations%22:null,%22moderated_grading_allow_list%22:null,%22submission_id%22:null,%22user_id%22:186670000000339810,%22attachment_id%22:4169497,%22type%22:%22canvadoc%22%7D&amp;hmac=8b5aa0f69a6058e18cd87c533323164b5c0f379e"
+                      width="100%"
+                      allowfullscreen="1"
+                      style="
+                        border: 0;
+                        overflow: auto;
+                        height: 99%;
+                        min-height: 800px;
+                      "
+                      id="undefined"
+                    ></iframe>
+                  </div>
+                </div>
+
+                <div
+                  id="sequence_footer"
+                  data-course-id="40743"
+                  data-asset-id="4169497"
+                  data-asset-type="File"
+                  style="display: none"
+                ></div>
+              </div>
+            </div>
+            <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+              <aside id="right-side" role="complementary"></aside>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: none">
+        <!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">992d5372-8622-4c64-8614-2a67750c9354</div>
+      </div>
+      <div
+        id="aria_alerts"
+        class="hide-text affix"
+        role="alert"
+        aria-live="assertive"
+      ></div>
+      <div id="StudentTray__Container"></div>
+      <div id="react-router-portals"></div>
+
+      <iframe
+        src="https://sso.canvaslms.com/post_message_forwarding?rev=59677caad5-de8233d392aa15f4&amp;token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJwYXJlbnRfZG9tYWluIjoiYXVsYS51b2MuZWR1In0.ZqkTg6gg5XkmnoALck-s4ml6qvoZx1LIuJ_WCL9jwDrTvtL_BMCHbIB1eAyT3Hy9etDBVT_8HxmoZoJnPYSsAQ"
+        name="post_message_forwarding"
+        title="post_message_forwarding"
+        id="post_message_forwarding"
+        sandbox="allow-scripts allow-same-origin"
+        style="display: none"
+      ></iframe>
+
+      <script>
+        //<![CDATA[
+        (window.bundles || (window.bundles = [])).push(
+          "inst_fs_service_worker"
+        );
+        //]]>
+      </script>
+      <script
+        src="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_186670000000000001/attachments/4865870/js-pro.js"
+        defer="defer"
+      ></script>
+      <script>
+        window.eesyLaunchConfig = {
+          host: "uoc.eesysoft.com",
+          key: "xF3WphfW",
+          supportTab: true,
+        };
+        (function () {
+          var e = document.createElement("script");
+          e.src =
+            "//" +
+            window.eesyLaunchConfig.host +
+            "/resources/js/canvas/launch.js";
+          e.async = true;
+          e.type = "text/javascript";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(e, s);
+        })();
+      </script>
+    </div>
+    <!-- #application -->
+
+    <div id="nav-tray-portal" style="position: relative; z-index: 99"></div>
+    <div id="impact-sr-alert" class="impact-sr-only" aria-live="polite"></div>
+  </body>
+</html>
